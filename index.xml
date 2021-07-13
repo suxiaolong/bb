@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>苏</title>
+    <link>https://suxiaolong.github.io/bb/</link>
+    <description>Recent content on 苏</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-ch</language>
+    <lastBuildDate>Fri, 03 Jul 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://suxiaolong.github.io/bb/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>SCI 投稿中像素、DPI、图片分辨率的一些知识</title>
+      <link>https://suxiaolong.github.io/bb/blog/xo4ieg/</link>
+      <pubDate>Fri, 03 Jul 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://suxiaolong.github.io/bb/blog/xo4ieg/</guid>
+      <description>欢迎关注 &amp;ldquo;BioIT爱好者&amp;rdquo; 公众号(ID：bioitee)，或者点击 这里 阅读原文。
+  最近在学习 Linux 命令行下的 ImageMagick 图像处理，对图像本身的一些概念有点懵，搜集整理了一点资料，仅供自己和大家学习与参考。
+ SCI 期刊对分辨率大多都有一定的要求，例如一段来自 Elsevier 旗下期刊的稿约：
+ **Formats **
+ If your electronic artwork is created in a Microsoft Office application (Word, PowerPoint, Excel) then please supply &amp;lsquo;as is&amp;rsquo; in the native document format. Regardless of the application used other than Microsoft Office, when your electronic artwork is finalized, please &amp;lsquo;Save as&amp;rsquo; or convert the images to one of the following formats (note the resolution requirements for line drawings, halftones, and line/halftone combinations given below):  EPS (or PDF): Vector drawings, embed all used fonts.</description>
+    </item>
+    
+    <item>
+      <title>生信服务器入门级基本设置</title>
+      <link>https://suxiaolong.github.io/bb/blog/bio-server-basic/</link>
+      <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://suxiaolong.github.io/bb/blog/bio-server-basic/</guid>
+      <description>欢迎关注 &amp;ldquo;BioIT爱好者&amp;rdquo; 公众号(ID：bioitee)，或者点击 这里 阅读原文。
+ 前两天拿到了云筏科技提供的一台 4 核 16G 内存，1TB 硬盘，300M 带宽的服务器（看了一下 IP，应该是位于加拿大的服务器）！虽然是国外的服务器，但从国内 ssh 上去后的各种操作还是非常流畅的，而且前期白菜般的体验价格和飞一般的带宽的确也很有吸引力，像我用来做 Galaxy 和一些 web 开发测试完全是没问题。另外该服务器还自带了一个开箱即用的 RStudio-Server，对生信入门者来说也算是比较友好了，最起码节省了不少部署设置的功夫。
+作为体验性服务器，这里简单介绍一下拿到服务器后的一些基本设置。 1. 查看配置信息  查看内核版本  [root@r0sasd1bQi ~]# cat /proc/version # 可以看到该服务器为 Redhat/CentOS 发行版本 Linux version 3.10.0-957.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ) #1 SMP Thu Nov 8 23:39:32 UTC 2018  查看详细版本信息  # 如果 lsb_release command not found，通过下面的方式安装 [root@r0sasd1bQi ~]# yum install redhat-lsb -y [root@r0sasd1bQi ~]# lsb_release -a	# 列出所有版本信息 LSB Version: :core-4.</description>
+    </item>
+    
+    <item>
+      <title>LaTeX 折腾系列 | Linux 字体安装的一点记录</title>
+      <link>https://suxiaolong.github.io/bb/blog/linux-install-fonts/</link>
+      <pubDate>Mon, 10 Feb 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://suxiaolong.github.io/bb/blog/linux-install-fonts/</guid>
+      <description>欢迎关注 &amp;ldquo;BioIT爱好者&amp;rdquo; 公众号(ID：bioitee)，或者点击 这里 阅读原文。
+ 在使用 LaTeX 进行中文字体编译排版过程中，发现 CentOS 6.5 中缺乏很大一部分中文字体，以至于在编译过程中频繁抛出缺乏字体的错误。 现在基于 windows 的 ttf 字体，以 “微软雅黑” 体为例，简单记录一下 Linux 下如何安装 windows 字体。
+1 . 首先获得一套”微软雅黑”字体库( Google 去下载，或者去 C:\Windows\Fonts 下直接复制)，包含两个文件 msyh.ttf （普通）、 msyhbd.ttf （加粗）；
+2 . 在 /usr/share/fonts 目录下建立一个子目录，例如 win ，命令如下：
+$ mkdir /usr/share/fonts/win 将 msyh.ttf 和 msyhbd.ttf 复制到该目录下，例如这两个文件放在 /home/shenweiyan 下，使用命令：  $ cd /home/shenweiyan $ cp msyh.ttf msyhbd.ttf /usr/share/fonts/win/ 4 . 建立字体索引信息，更新字体缓存：
+$ cd /usr/share/fonts/win $ mkfontscale $ mkfontdir $ fc-cache 至此，字体已经安装完毕！如果想要查看本机器所安装的中文字体，可通过 fc-list 命令查看：</description>
+    </item>
+    
+    <item>
+      <title>基于 Dash Bio 的生物信息学数据可视化</title>
+      <link>https://suxiaolong.github.io/bb/blog/tp85x1/</link>
+      <pubDate>Sat, 12 Oct 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://suxiaolong.github.io/bb/blog/tp85x1/</guid>
+      <description>欢迎关注 &amp;ldquo;BioIT爱好者&amp;rdquo; 公众号(ID：bioitee)，或者点击 这里 阅读原文。
+ Dash 是用于搭建响应式 Web 应用的 Python 开源库。Dash Bio 是面向生物信息学，且与 Dash 兼容的组件，它可以将生物信息学领域中常见的数据整合到 Dash 应用程序，以实现响应式的生物信息学数据可视化。
+安装 pip install dash dash-bio 截止 2019.09.25，dash-bio 在 PyPI 的最新版本为 0.1.3，dash 的最新版本为 1.3.1。
+&amp;gt;&amp;gt;&amp;gt; import dash,dash_bio &amp;gt;&amp;gt;&amp;gt; print(dash.__version__) 1.3.1 &amp;gt;&amp;gt;&amp;gt; print(dash_bio.__version__) 0.1.4 dash Plotly 的 dash 库提供了一个声明性的 Python 接口，用于开发全栈式 Web 应用程序（“Dash apps&amp;quot;）。除了主要的 dash 库之外，dash-html-components 和 dash-core-components 包还构成了 Dash 应用程序的 building blocks。dash-html-components 提供了一个用于构建 Dash 应用程序布局的界面，该界面模仿了构建网站布局的过程； dash-core-components 是用于与 Dash 应用程序进行交互的一组常用工具（例如，下拉菜单，文本输入和滑块），并包括 dcc.Graph 组件，用于使用 plotly.py 制作交互式图形。</description>
+    </item>
+    
+    <item>
+      <title>语雀图片的同步迁移解决方案</title>
+      <link>https://suxiaolong.github.io/bb/blog/sync-from-yuque-to-qiniu/</link>
+      <pubDate>Thu, 08 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>https://suxiaolong.github.io/bb/blog/sync-from-yuque-to-qiniu/</guid>
+      <description>欢迎关注 &amp;ldquo;BioIT爱好者&amp;rdquo; 公众号(ID：bioitee)，或者点击 这里 阅读原文。
+ 昨天登录 Github Jekyll 博客时候，忽然发现很多文章的图片都出现了 404！后来检查才知道，原来从 2019 年 8 月起，语雀上的一些静态图片开启了防外链设置，因此之前通过 api 同步语雀文章的内容到第三方的平台，会导致包括图片在内的静态资源都无法访问。
+于是乎，开始寻找解决方案。
+ 方案一，通过七牛的镜像空间同步语雀的图片，然后渲染博客页面的时候将语雀域名转换为七牛上绑定的自定义域名，从而确保博客的图片都正常可用。关于七牛云镜像存储，这里列举两点介绍：    七牛的镜像存储服务是一种快速的数据迁移和加速服务。可以帮助用户实现无缝数据迁移，迁移过程中并不影响原有业务系统的访问。镜像存储适用于迁移原有业务系统的已有数据。七牛提供分布式存储和加速分发服务，以分布式存储为核心服务。 在镜像存储的业务模型里面，原来的图片或者视频访问域名将被配置为七牛的源站，而页面里面引用图片或视频链接的地方必须使用新的访问域名。然后将新的访问域名绑定 (CNAME) 到七牛空间对应的域名。在这些操作完成之后，终端用户就可以通过七牛访问图片或者视频等非结构化资源了。在每个访问请求到七牛的时候，如果七牛空间中不存在这个资源，那么七牛将主动回客户源站抓取资源并存储在空间里面，这样七牛就不需要再次回源客户的资源站点了。    更详细的介绍，请参考七牛云官方文档：《七牛镜像存储使用手册》。
+  方案二，使用对象存储的镜像回源，不管是阿里云的 oss，还是腾讯云的 cos 都可以满足这一点。什么是回源，镜像回源又是什么意思，这里摘录几点信息：    回源的概念。说的简单点，就是当访问的 OSS 资源不存在，则直接跳过对 OSS 的请求，直接去访问网站本身存在的文件。例如网站上使用了一张图片 static.a.com/images/a.jpg ，按道理，应该在 OSS 的 bucket 中也存在 /images/a.jpg ，这样访问 static.a.com/images/a.jpg 时，才能正常看到这张图片。但是，可惜的是，管理员把图片上传到了 www.a.com/images/a.jpg ，也就是上传到了网站服务器上面去，而 OSS 中没有这张图片。而这个时候，回源的效果就是，访问 static.a.com/images/a.jpg 时，发现 OSS 中没有这张图片，CDN 立即去找 www.a.com/images/a.jpg ，如果有，则返回这张图片。    那镜像又是怎么回事呢？就是做一个备份。上面这个情况中，OSS 中没有这张图片，而网站服务器上有这张图片，通过访问 static.</description>
+    </item>
+    
+    <item>
+      <title>简介</title>
+      <link>https://suxiaolong.github.io/bb/about/</link>
+      <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://suxiaolong.github.io/bb/about/</guid>
+      <description>99999关于作者 88888 沈维燕(Steven Shen)，一个 90 后的广东人，熟悉粤语、国语，略懂英语。本人 2013 年毕业于南方医科大学（原中国人民解放军第一军医大学）基础医学学院生物信息学专业。现工作生活于广州，主要从事 Bio IT 的一些相关工作。平时喜欢逛逛技术论坛，玩玩羽毛球，看看电影，瞎折腾一下技术，不务正业之余喜欢记录一些生活工作学习中的一些想法。喜欢分享，喜欢把事情简单化，程序化。
+专业技能  熟悉 Python、R、Perl、LaTeX、Html .etc. 编程。 熟悉 Galaxy 生物信息学平台相关部署与定制化工具开发。 熟悉常用生物信息学数据分析与可视化，了解 web 相关应用开发。 擅长 Linux，尤其是 CentOS，熟悉 LSF、SGE 集群相关运维。  </description>
+    </item>
+    
+  </channel>
+</rss>
