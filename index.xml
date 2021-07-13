@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>我的文章2</title>
+      <link>https://suxiaolong.github.io/bb/feedback/two/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://suxiaolong.github.io/bb/feedback/two/</guid>
+      <description>dddd ddddddwwwww大大苏打实打实 88888 </description>
+    </item>
+    
+    <item>
       <title>生信服务器入门级基本设置</title>
       <link>https://suxiaolong.github.io/bb/blog/bio-server-basic/</link>
       <pubDate>Wed, 03 Jun 2020 00:00:00 +0000</pubDate>
@@ -29,6 +38,16 @@
       <description>欢迎关注 &amp;ldquo;BioIT爱好者&amp;rdquo; 公众号(ID：bioitee)，或者点击 这里 阅读原文。
  前两天拿到了云筏科技提供的一台 4 核 16G 内存，1TB 硬盘，300M 带宽的服务器（看了一下 IP，应该是位于加拿大的服务器）！虽然是国外的服务器，但从国内 ssh 上去后的各种操作还是非常流畅的，而且前期白菜般的体验价格和飞一般的带宽的确也很有吸引力，像我用来做 Galaxy 和一些 web 开发测试完全是没问题。另外该服务器还自带了一个开箱即用的 RStudio-Server，对生信入门者来说也算是比较友好了，最起码节省了不少部署设置的功夫。
 作为体验性服务器，这里简单介绍一下拿到服务器后的一些基本设置。 1. 查看配置信息  查看内核版本  [root@r0sasd1bQi ~]# cat /proc/version # 可以看到该服务器为 Redhat/CentOS 发行版本 Linux version 3.10.0-957.el7.x86_64 (mockbuild@kbuilder.bsys.centos.org) (gcc version 4.8.5 20150623 (Red Hat 4.8.5-36) (GCC) ) #1 SMP Thu Nov 8 23:39:32 UTC 2018  查看详细版本信息  # 如果 lsb_release command not found，通过下面的方式安装 [root@r0sasd1bQi ~]# yum install redhat-lsb -y [root@r0sasd1bQi ~]# lsb_release -a	# 列出所有版本信息 LSB Version: :core-4.</description>
+    </item>
+    
+    <item>
+      <title>留言</title>
+      <link>https://suxiaolong.github.io/bb/feedback/first/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://suxiaolong.github.io/bb/feedback/first/</guid>
+      <description>本站所有文章已经开启 utterances 评论模块，如果你有任何建议，欢迎留言。相关文章的更多详细信息，请移步本博客的 &amp;ldquo;语雀专栏&amp;rdquo; 进行查看，感谢你的一路支持！
+ </description>
     </item>
     
     <item>
@@ -71,7 +90,7 @@ $ cd /usr/share/fonts/win $ mkfontscale $ mkfontdir $ fc-cache 至此，字体�
     </item>
     
     <item>
-      <title>简介</title>
+      <title>简介222</title>
       <link>https://suxiaolong.github.io/bb/about/</link>
       <pubDate>Thu, 05 May 2016 00:00:00 +0000</pubDate>
       

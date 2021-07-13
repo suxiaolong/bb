@@ -7,5 +7,24 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-ch</language>
     <lastBuildDate>Fri, 13 Mar 2020 00:00:00 +0000</lastBuildDate><atom:link href="https://suxiaolong.github.io/bb/feedback/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>我的文章2</title>
+      <link>https://suxiaolong.github.io/bb/feedback/two/</link>
+      <pubDate>Sat, 13 Jun 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://suxiaolong.github.io/bb/feedback/two/</guid>
+      <description>dddd ddddddwwwww大大苏打实打实 88888 </description>
+    </item>
+    
+    <item>
+      <title>留言</title>
+      <link>https://suxiaolong.github.io/bb/feedback/first/</link>
+      <pubDate>Wed, 13 May 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://suxiaolong.github.io/bb/feedback/first/</guid>
+      <description>本站所有文章已经开启 utterances 评论模块，如果你有任何建议，欢迎留言。相关文章的更多详细信息，请移步本博客的 &amp;ldquo;语雀专栏&amp;rdquo; 进行查看，感谢你的一路支持！
+ </description>
+    </item>
+    
   </channel>
 </rss>
